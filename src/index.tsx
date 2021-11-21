@@ -12,8 +12,12 @@ function concatStrings(left, right): concatFunctionType {
 interface IHomeTask {
     howIDoIt: string,
     simeArray: Array<string | number>,
-    withData(): object[]
+    withData: Array<{
+        howIDoIt: string,
+        simeArray: Array<string | number>
+    }>
 }
+
 
 // 3 - Типизация функций, используя Generic
 
