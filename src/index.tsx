@@ -1,8 +1,12 @@
 import * as React from "react";
 // 1 - Работа с простыми типами
-function concat(left: string, right: string): string {
+
+type concatFunctionType = (left: string | number | any[], right: string | number | any[]) => string | any[]
+
+function concatStrings(left, right): concatFunctionType {
     return left + right
 }
+
 
 // 2 - Работа с интерфейсами
 interface IHomeTask {
